@@ -1,0 +1,148 @@
+<!-- BEGIN: user_form.html -->
+
+            <div ng-include src="'views/navbar.html'"></div>
+
+            <table border="0" width="750" cellspacing="0" cellpadding="0" style="display: inline;">
+                <tr>
+                <td colspan="2">
+                    <img src="images/bookings_banner2.jpg" border="1" alt="Reserve your dive trip online" width="750" height="120" />
+                </td>
+                </tr>
+            </table>
+
+
+            <table border="0" width="750" cellspacing="0" cellpadding="0">
+                <tr>
+                <td valign="top" align="left" width="400">
+
+                <form name="userForm">
+                    <table style="width: 320px; border: 0px solid #000000;">
+
+                        <tr>
+                        <td align="left" valign="bottom" colspan="2" style="height: 22px;" class="myfont1_blue">Diver Account <span class="flash">{{flash.get_message()}}</span></td>
+                        </tr>
+
+
+                        <tr>
+                        <td align="left" class="myfont1" style="width: 142px; max-width: 142px;">Email:</td>
+                        <td align="left"><input type="email"
+                                                name="email"
+                                                ng-model="user.email"
+                                                ng-maxlength="128"
+                                                required></td>
+                        </tr>
+
+                        <tr>
+                        <td align="left" class="myfont1">Password:</td>
+                        <td align="left"><input type="password"
+                                                name="passwd"
+                                                ng-model="user.passwd"
+                                                ng-maxlength="36">
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td align="left" class="myfont1">Confirm Password:</td>
+                        <td align="left"><input type="password"
+                                                name="confirm_passwd"
+                                                ng-model="user.passwd"
+                                                ng-maxlength="36"></td>
+                        </tr>
+
+                        <tr>
+                        <td align="left" class="myfont1">Phone Number:</td>
+                        <td align="left"><input type="text"
+                                                name="phone"
+                                                ng-model="user.phone"
+                                                ng-maxlength="32">
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td align="left" class="myfont1">Cert Level &amp; Agency:</td>
+                        <td align="left"><input type="text"
+                                                name="cert_level"
+                                                ng-model="user.cert_level"
+                                                ng-maxlength="64">
+                        </td>
+                        </tr>
+
+                        <tr><td colspan="2"><br /></td></tr>
+
+                        <tr>
+                        <td align="left" class="myfont1">First Name:</td>
+                        <td align="left"><input type="text"
+                                                name="fname"
+                                                ng-model="user.billing_fname"
+                                                ng-maxlength="64">
+                                                </td>
+                        </tr>
+
+                        <tr>
+                        <td align="left" class="myfont1">Last Name:</td>
+                        <td align="left"><input type="text"
+                                                name="billing_lname"
+                                                ng-model="user.billing_lname"
+                                                ng-maxlength="64">
+                                                </td>
+                        </tr>
+
+                        <tr>
+                        <td align="left" class="myfont1">Address:</td>
+                        <td align="left"><input type="text"
+                                                name="billing_address"
+                                                ng-model="user.billing_address"
+                                                ng-maxlength="64"></td>
+                        </tr>
+
+                        <tr>
+                        <td align="left" class="myfont1">City:</td>
+                        <td align="left"><input type="text"
+                                                name="billing_city"
+                                                ng-model="user.billing_city"
+                                                ng-maxlength="64"></td>
+                        </tr>
+
+                        <tr>
+                        <td align="left" class="myfont1">State/Province:</td>
+                        <td align="left"><input type="text"
+                                                name="billing_state"
+                                                ng-model="user.billing_state"
+                                                ng-maxlength="64"></td>
+                        </tr>
+
+                        <tr>
+                        <td align="left" class="myfont1">Country:</td>
+                        <td align="left"><input ng-model="user.billing_country"
+                                                name="country"
+                                                ng-maxlength="64"></td>
+                        </tr>
+
+                        <tr>
+                        <td align="left" class="myfont1">Postal Code:</td>
+                        <td align="left"><input type="text"
+                                                name="billing_zip"
+                                                ng-model="user.billing_zip"
+                                                ng-maxlength="16"></td>
+                        </tr>
+
+			<tr>
+                        <td colspan="2"><hr style="background-color: #cd0000; margin-top: 14px; height: 1px;" /></td>
+                        </tr>
+
+                        <tr>
+                        <td align="center" colspan="2" style="padding-top: 10px;">
+                            <button ng-disabled="userForm.$invalid"
+                                    ng-show="save_button"
+                                    ng-click="save()">Save</button>
+                            <button type="button"
+                                    ng-show="delete_button"
+                                    ng-click="remove()">Delete</button>
+                        </td>
+                        </tr>
+
+                    </table>
+                </form>
+                </td>
+                </tr>
+            </table>

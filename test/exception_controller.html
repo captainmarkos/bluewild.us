@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<title>Exception Controller</title>
+<script src="angular.js"></script>
+<style type="text/css">
+
+.error {
+    background-color: #cd0000;
+    color: #ffffff;
+    font-family: Arial, Verdana, Sans-serif;
+    font-weight: bold;
+}
+
+.warning {
+    background-color: #ffff00;
+    font-family: Arial, Verdana, Sans-serif;
+    font-weight: bold;
+}
+
+</style>
+<script>
+
+    function ExceptionController($scope) {
+        $scope.is_error = false;
+        $scope.is_warning = false;
+
+
+        $scope.show_error = function() {
+            $scope.message = 'This is an error!';
+            $scope.is_error = true;
+            $scope.is_warning = false;
+        }
+
+        $scope.show_warning = function() {
+            $scope.message = 'This is a warning!  Carry on.';
+            $scope.is_error = false;
+            $scope.is_warning = true;
+        }
+
+
+        $scope.insertNew = function() {
+            $scope.divelog.splice(1, 0, {id: '999', name: 'Devil', email: 'dude@dude.com'});
+        }
+    }
+
+</script>
+</head>
+<body ng-controller='ExceptionController'>
+<!-- Demonstrating directives -->
+<h2 style="color: #0000f6; font-family: Arial, Verdana, Sans-serif;">Classes &amp; Styles</h2>
+<br />
+<hr />
+
+<div>
+    <div ng-class='{error: is_error, warning: is_warning}'>{{message}}</div>
+</div>
+<button ng-click="show_error()">Simulate Error</button>
+<button ng-click="show_warning()">Simulate Warning</button>
+
+</body>
+</html>

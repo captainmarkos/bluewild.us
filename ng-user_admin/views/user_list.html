@@ -1,0 +1,19 @@
+<!-- BEGIN: user_list.html -->
+
+            <div ng-include src="'views/navbar.html'"></div>
+
+            <table border="0" width="750" cellspacing="0" cellpadding="0" style="display: inline;">
+                <tr>
+                <td colspan="2">
+                    <img src="images/bookings_banner2.jpg" border="1" alt="Reserve your dive trip online" width="750" height="120" />
+                </td>
+                </tr>
+            </table>
+
+            <table border="0" width="750">
+                <tr ng-repeat="user in users">
+                    <td class="myfont1">{{user.email}}</td>
+                    <td class="myfont1">{{user.billing_fname}}</td>
+                    <td class="myfont1">{{user.billing_lname}}</td>
+                </tr>
+            </table>

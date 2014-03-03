@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+<title>HelloWorld - AngularJS</title>
+<script src="angular.js"></script>
+<script src="helloworld_controller.js"></script>
+</head>
+<body>
+
+<h1>HelloWorld - AngularJS</h1>
+
+<div ng-controller="HelloWorldController">
+    <input ng-model='greeting.text'>
+    <p>{{greeting.text}}, World</p>
+</div>
+
+</body>
+</html>
+

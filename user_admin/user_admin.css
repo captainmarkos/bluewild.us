@@ -1,0 +1,64 @@
+#sign_in { color: #0000ff; }
+#sign_in:hover {
+    cursor: pointer;
+    color: #cd0000;
+    text-decoration: underline;
+}
+
+#sign_out { color: #0000ff; }
+#sign_out:hover {
+    cursor: pointer;
+    color: #cd0000;
+    text-decoration: underline;
+}
+
+#sign_in_create_user { color: #0000ff; }
+#sign_in_create_user:hover {
+    cursor: pointer;
+    color: #cd0000;
+    text-decoration: underline;
+}
+
+#create_user { color: #0000ff; }
+#create_user:hover {
+    cursor: pointer;
+    color: #cd0000;
+    text-decoration: underline;
+}
+
+#update_user { color: #0000ff; }
+#update_user:hover {
+    cursor: pointer;
+    color: #cd0000;
+    text-decoration: underline;
+}
+
+#delete_user { color: #0000ff; }
+#delete_user:hover {
+    cursor: pointer;
+    color: #cd0000;
+    text-decoration: underline;
+}
+
+#forgot_password { color: #0000ff; }
+#forgot_password:hover {
+    cursor: pointer;
+    color: #cd0000;
+    text-decoration: underline;
+}
+
+#sign_in_forgot_password { color: #0000ff; }
+#sign_in_forgot_password:hover {
+    cursor: pointer;
+    color: #cd0000;
+    text-decoration: underline;
+}
+
+input {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #1ba4ff;
+    font-size: 9pt;
+    padding-left: 2px;
+    margin-bottom: 2px;
+}

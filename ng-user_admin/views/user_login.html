@@ -1,0 +1,76 @@
+<!-- BEGIN: user_login.html -->
+
+            <div ng-include src="'views/navbar.html'"></div>
+
+            <table border="0" width="750" cellspacing="0" cellpadding="0"  style="display: inline;">
+                <tr>
+                <td colspan="2">
+                    <img src="images/bookings_banner3.jpg" border="1" alt="book your dive trip online" width="750" height="120" />
+                </td>
+                </tr>
+            </table>
+
+            <form name="loginForm">
+            <table border="0" width="750" cellspacing="0" cellpadding="0">
+                <tr>
+                <td valign="top" align="left" width="400">
+
+                    <table width="100%" border="0" style="border: 0px solid #000000;" cellspacing="2" cellpadding="0">
+
+                        <tr>
+                        <td valign="bottom" class="myfont1_blue" colspan="2" style="height: 22px;">Login to your Diver Account <span class="flash">{{flash.get_message()}}</span></td>
+                        </tr>
+
+
+                        <tr>
+                        <td align="left" class="bookfont2" colspan="2"><br /></td>
+                        </tr>
+
+                        <tr>
+                        <td style="text-align: right; width: 100px;" class="myfont1">Email Address:</td>
+
+                        <td style="text-align: left; width: 300px;">
+                            <input type="email"
+                                   name="email"
+                                   ng-model="user.email"
+                                   ng-maxlength="128"
+                                   required></td>
+                        </tr>
+
+                        <tr>
+                        <td align="left" class="bookfont2" colspan="2"><br /></td>
+                        </tr>
+
+                        <tr>
+                        <td style="text-align: right; width: 100px;" class="myfont1">Password:</td>
+                        <td style="text-align: left; width: 300px;" align="left">
+                            <input type="password"
+                                   name="passwd"
+                                   ng-model="user.passwd"
+                                   ng-maxlength="36"
+                                   required></td>
+
+                        </tr>
+
+                        <tr>
+                        <td style="text-align: center; width: 100%" colspan="2"><br />
+                            <a href="index.php?page=forgot_passwd" class="navlink_big">I forgot my password</a>
+                            <br /><br />
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td align="center" colspan="2">
+                            <button ng-disabled="loginForm.$invalid"
+                                    ng-click="login()"
+                                    ng-show="login_button">Sign In</button>
+
+                        </td>
+                        </tr>
+            
+                    </table>
+
+                </td>
+                </tr>
+            </table>
+            </form>

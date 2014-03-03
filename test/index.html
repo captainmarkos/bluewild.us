@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+<title>Test - AngularJS</title>
+<script src="angular.js"></script>
+<script src="controller.js"></script>
+</head>
+<body ng-controller="TestController">
+
+<h1>Test - AngularJS</h1>
+
+<table border="1">
+    <tr>
+        <td>ID</td>
+        <td>EMAIL</td>
+        <td>DIVE NO</td>
+        <td>LOCATION</td>
+        <td>SITE NAME</td>
+    </tr>
+    <tr ng-repeat="item in items">
+        <td>{{item.id}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.dive_no}}</td>
+        <td>{{item.location}}</td>
+        <td>{{item.site_name}}</td>
+    </tr>
+</table>
+
+
+<br />
+<br />
+<b>Sample URLs to retrieve data (GET or POST)</b>
+<br />
+http://bluewild.local/divelog_v3/test.php?email=captainmarkos@gmail.com
+<br />
+http://bluewild.local/divelog_v3/test.php?id=70
+
+</body>
+</html>
+

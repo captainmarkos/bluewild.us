@@ -1,0 +1,410 @@
+/* --------------------------*/
+/*                           */
+/*     #myID { }             */
+/*                           */
+/*     .myClass { }          */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+body {
+    min-height: 100%;
+    background: url('../images/underwater_background.gif') no-repeat 50% 0;
+    background-color: #000032;
+}
+
+#main_table {
+    border: 0px solid #00ffff;
+    width: 800px;
+    max-width: 800px;
+}
+
+#trans_top_row {
+    height: 50px;
+    display: inline-block;
+}
+
+#content_table {
+    border: 2px solid #0000ff;
+    background-color: #ffffff;
+    width: 100%;
+    max-height: 1400px;
+    height: 800px;
+    padding-top: 10px;
+    opacity: .92;
+}
+
+.navlink {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0000cd;
+
+    margin: 4px;
+    padding: 2px 4px 2px 4px;
+}
+
+.navlink:hover {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #cd0000;
+
+    margin: 4px;
+    padding: 2px 4px 2px 4px;
+}
+
+.navlink_selected {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cd0000;
+    cursor: pointer;
+
+    margin: 4px;
+    padding: 2px 4px 2px 4px;
+}
+
+.navlink_selected:hover {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #cd0000;
+    cursor: default;
+    text-decoration: none;
+
+    margin: 4px;
+    padding: 2px 4px 2px 4px;
+}
+
+.navlink_big {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #0000cd;
+    text-decoration: none;
+}
+
+.navlink_big:hover {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #cd0000;
+    text-decoration: underline;
+}
+
+.myfont1 {
+    font-family: "Trebuchet MS", Arial, snas-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #404040;
+}
+
+.myfont1_blue {
+    font-family: "Trebuchet MS", Arial, snas-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #0000cd;
+}
+
+.flash {
+    font-family: "Trebuchet MS", Arial, snas-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #cd00cd;
+}
+
+
+/* ===================================== */
+
+
+.myfont2 { 
+    font-family: "Trebuchet MS", Verdana, "MS Serif";
+    font-size: 14px; 
+    color: #404040;
+    text-align: justify;
+}
+
+.myfont3 {
+    font-family: Arial, "Trebuchet MS", sans-serif; 
+    font-size: 16px; 
+    font-weight: normal; 
+}
+
+.myfont_footer {
+    font-family: "Trebuchet MS", Verdana, Arial;
+    font-size: 10pt;
+}
+
+.myfont_small {
+    font-family:  Verdana, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.myfont_small2 {
+    font-family:  Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    color: #000000;
+}
+
+a.mylink1       { text-decoration: none; color: #003399; }
+a.mylink1:hover { text-decoration: underline; color: #cd0000; }
+
+#mainbox {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    width: 800px;
+    height: 100%;
+    border-top: 2px solid #00ffff;
+    border-right: 2px solid #00ffff;
+    border-bottom: 2px solid #00ffff;
+    border-left: 2px solid #00ffff;
+}
+
+#content {
+    padding: 10px 5px 10px 5px;
+    margin: 0px 0px 0px 0px;
+    width: 790px;
+    height: 100%;
+    background-color: #ffffff;
+    clear: both;
+
+    font-family: "Trebuchet MS", Verdana, Arial;
+    font-size: 10pt;
+    font-weight: normal;
+    color: #404040;
+}
+
+#header {
+    padding: 5px 5px 5px 5px;
+    margin: 0px 0px 0px 0px;
+    width: 790px;
+    height: 30px;
+    border: 0px solid #404040;
+    background-color: #ffffff;
+    clear: both;
+}
+
+#footer {
+    padding: 5px 5px 5px 5px;
+    margin: 0px 0px 0px 0px;
+    width: 790px;
+    border: 0px solid #404040;
+    background-color: #ffffff;
+    clear: both;
+}
+
+#pg_table {
+    height: 180px;
+    border: 1px solid #30b9f3;
+    padding: 4px 4px 4px 4px;
+    background-color: #e6e6e6;
+}
+
+#adPost {
+    text-align: left;
+    border: 3px solid #d5d5d5;
+    background: #e7fbfe url('images/disc-back-blue2.gif') repeat;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+}
+
+
+#adPostBody {
+    text-align: justify;
+    font-family: "MS Sans Serif", Arial, "Trebuchet MS";
+    font-size: 10pt;
+    font-weight: normal;
+    color: #303030;
+    float: right;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+}
+
+
+/* ------------------------------------ */
+/* BEGIN: Horizontal Drop-Down Menu Bar */
+/* ------------------------------------ */
+
+#menu {
+    width: 100%;
+    background: url(images/bg_blue_bar.jpg) repeat-x;
+    float: left;
+    height: 29px;
+    border-top: 1px solid #0000cd;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;    /* top right bottom left */
+    width: 160px;  /*7em;*/
+    float: left;
+    border-bottom: 1px solid #00ffff;
+}
+
+#menu a, 
+#menu h2 {
+    font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 7px 0px 7px 0px;  /* top right bottom left */
+}
+
+#menu h2 {
+    color: #ffffff;
+}
+
+#menu a {
+    color: #ffffff;
+    background: url(images/bg_blue_bar.jpg) repeat-x;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    margin: 0;
+    color: #ffffff;
+    background: #000080;
+}
+
+#menu li { position: relative; }
+
+#menu ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+#menu ul ul  {
+    position: absolute;
+    z-index: 500;
+}
+
+div#menu ul ul,
+div#menu ul li:hover ul ul,
+div#menu ul ul li:hover ul ul 
+{
+    display: none;
+}
+
+div#menu ul li:hover ul,
+div#menu ul ul li:hover ul,
+div#menu ul ul ul li:hover ul
+{
+    display: block;
+    width: 160px;
+    text-align: center;
+}
+
+/* ------------------------------------ */
+/* END: Horizontal Drop-Down Menu Bar   */
+/* ------------------------------------ */
+
+
+/* ------------------------------------ */
+/* BEGIN: CSS for form input fields     */
+/* ------------------------------------ */
+
+input
+{
+    color: #000000;
+    background: #f6f6f6;
+    border: 1px solid #30b9f3;
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+
+input.upper   /* some textboxes we want uppercase */
+{
+    color: #000000;
+    background: #f6f6f6;
+    border: 1px solid #30b9f3;
+    font-size: 12px;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+}
+
+select
+{
+    color: #000000;
+    background: #f6f6f6;
+    border: 1px solid #30b9f3;
+    font-size: 12px;
+}
+
+textarea
+{
+    color: #000000;
+    background: #f6f6f6;
+    border: 1px solid #30b9f3;
+    font-size: 12px;
+}
+
+.chkbox
+{
+    color: #000000;
+    background: #f6f6f6;
+    border: 0px solid #000000;
+    font-size: 12px;
+    padding: 0 0 0 0;
+}
+
+.radio1
+{
+    color: #000000;
+    background: #f6f6f6;
+    border: 0px solid #000000;
+    font-size: 12px;
+    padding: 0 0 0 0;
+}
+
+.radio2
+{
+    color: #000000;
+    background: #f6f6f6;
+    border: 0px solid #000000;
+    font-size: 12px;
+    padding: 0 0 0 0;
+    margin: 4px 0 0 0px;
+}
+
+/* ------------------------------------ */
+/* BEGIN: CSS for readonly input fields */
+/* ------------------------------------ */
+
+input.readonly
+{
+    color: #000000;
+    background: #c6c6c6;
+    border: 1px solid #30b9f3;
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+
+textarea.readonly
+{
+    color: #000000;
+    background: #c6c6c6;
+    border: 1px solid #30b9f3;
+    font-size: 12px;
+}
+
+.chkbox_readonly
+{
+    color: #000000;
+    background: #c6c6c6;
+    border: 0px solid #000000;
+    font-size: 12px;
+    padding: 0 0 0 0;
+}
+
+/* ---------------------------------- */
+/* END: CSS for readonly input fields */
+/* ---------------------------------- */

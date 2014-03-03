@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<title>Shopping Cart - AngularJS</title>
+<script src="angular.js"></script>
+<script>
+
+    var divelog = [{id: '100', name: 'Foo', email: 'foo@bar.com'},
+                   {id: '101', name: 'Bar', email: 'bar@foo.com'},
+                   {id: '102', name: 'Test', email: 'test@test.com'}];
+
+    function ShoppingCartController($scope) {
+        $scope.items = [
+            {title: 'Paint pots', quantity: 8, price: 3.95},
+            {title: 'Polka dots', quantity: 7, price: 12.95},
+            {title: 'Electric Guitar', quantity: 8, price: 2333.95},
+            {title: 'Balloons', quantity: 8, price: 0.95}
+        ];
+
+        $scope.message = 'You have started your journey.';
+        $scope.divelog = divelog;
+
+        $scope.remove = function(index) {
+            $scope.items.splice(index, 1);
+        }
+
+        $scope.insertNew = function() {
+            $scope.divelog.splice(1, 0, {id: '999', name: 'Devil', email: 'dude@dude.com'});
+        }
+    }
+
+</script>
+</head>
+<body ng-controller='ShoppingCartController'>
+<!-- Demonstrating directives -->
+<h2 style="color: #0000f6; font-family: Arial, Verdana, Sans-serif;">Demonstrating Directives</h2>
+<br />
+<hr />
+<h3 style="color: #0000f6; font-family: Arial, Verdana, Sans-serif;">{{message}}</h3>
+
+<table border="1" width="600" style="font-family: Arial;">
+    <tr style="font-weight: bold;">
+       <td>Title</td><td>QTY</td><td>Price</td><td>Total</td><td style="width: 70px;">&nbsp;</td>
+    </tr>
+    <tr ng-repeat="item in items">
+        <td>{{item.title}}</td>
+        <td><input ng-model='item.quantity'></td>
+        <td>{{item.price | currency}}</td>
+        <td>{{item.price * item.quantity | currency}}</td>
+        <td><button ng-click="remove($index)">Remove</button></td>
+    </tr>
+</table>
+
+<br />
+
+<ul>
+    <li ng-repeat='entry in divelog'>
+        <span>{{entry.id}}</span>
+        <span>{{entry.name}}</span>
+        <span>{{entry.email}}</span>
+    </li>
+</ul>
+<button ng-click="insertNew()">Insert</button>
+
+</body>
+</html>
